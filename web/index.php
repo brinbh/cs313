@@ -1,24 +1,25 @@
-<!--Create an HTML page with a head element that provides a title for your page, and links to external CSS and JavaScript files.
-
-On the HTML page, create 3 divs and a button labeled "Click Me".
-
-Add classes and/or ids to your divs, then use the CSS to set their font-size and background color. Add function in your JavaScript file to alert the text "Clicked!", and have your button call this function when it is clicked.
-
-Use CSS to make it so that hovering over any of the 3 divs causes the text to temporarily become bold.
-
-Make it so that the user can specify custom colors for the first div. To accomplish this, add a text box and another button labeled "Change color". Write a JavaScript function that gets invoked by clicking this button that gets the text from the textbox and sets the color of the first div./-->
-
 <!DOCTYPE html>
 <html>
     <head>
         <title>CS 313 Assignments</title>
-        <script href="functions.js"></script>
-        <link href="main.css" type="text/css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="functions.js"></script>
+        
     </head>
     <body>
-        <div class="text"><p>Here is some text.</p></div>
-        <div class="text">Here is some text.</div>
-        <div class="text">Here is some text.</div>
-        <button>Click Me!</button>
+        <header>
+        <h1>Brittany Hill</h1>
+        <a class="button" href="assignments.php">CS 313 Assignments</a>
+        </header>
+        <hr>
+        
+        <div class="main-content">
+            <div class="profile">
+            <img class="small" src="img/_MG_1324-72.jpg" alt="Picture of Brittany."/><img class="bigImg" src="img/_MG_1324-72.jpg" alt="Picture of Brittany."/></div>
+            <div><h3>Introduction About Myself</h3><p>I am Brittany and I am a Web Developer. I will graduate this year in April and am doing an internship with Family Search. Besides programming, I like to do user experience design. I also enjoy singing, going hiking, and going to church.</p></div>
+        </div>
+        
+        
     </body>
 </html>
