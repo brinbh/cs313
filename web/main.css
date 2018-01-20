@@ -56,6 +56,10 @@ header{
     align-items: center;
 }
 
+footer{
+    padding-top: 100%;
+}
+
 img{
     margin-right: 20px;
     border-radius: 5px;

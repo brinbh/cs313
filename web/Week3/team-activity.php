@@ -47,10 +47,10 @@
                  <p>Name: </p><input type="text" name="name"><br>
                  <p>Email: </p><input type="text" name="email"><br>
                  <p>Major: </p><br>
-                    <input type="radio" name="major" value="computerScience">Computer Science<br><br>
-                    <input type="radio" name="major" value="webDesignAndDevelopment">Web Design and Development<br><br>
-                    <input type="radio" name="major" value="computerInformationTechnology">Computer information Technology<br><br>
-                    <input type="radio" name="major" value="computerEngineering">Computer Engineering<br><br>
+                    <input type="radio" name="major" value="Computer Science">Computer Science<br><br>
+                    <input type="radio" name="major" value="Web Design and Development">Web Design and Development<br><br>
+                    <input type="radio" name="major" value="Computer Information Technology">Computer information Technology<br><br>
+                    <input type="radio" name="major" value="Computer Engineering">Computer Engineering<br><br>
                  <p>Comments: </p><input type="text-area" name="comments"><br><br>
                  <input type="submit">
             </form>
