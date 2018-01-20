@@ -25,7 +25,10 @@ h3 {
 p{
     padding-top: 1rem;
 }
-
+a{
+    color: #336598;
+    border-bottom: 1px solid #336598;
+}
 /*COLOR*/
 body{
     background-color: #F2F1EF;
