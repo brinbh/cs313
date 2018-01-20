@@ -65,6 +65,6 @@
 /-->
 <?php include "header.php"; ?>
         <div class="main-content">
-
+            <p>This will be a form.</p>
         </div>
 <?php include "footer.php"; ?>
