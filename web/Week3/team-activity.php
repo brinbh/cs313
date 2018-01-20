@@ -42,7 +42,7 @@
 
 /-->
 <?php include "../header.php"; ?>
-        <div class="../main-content">
+        <div class="main-content">
             <form action="contact-form.php" method="post">
                  <p>Name: </p><input type="text" name="name"><br>
                  <p>Email: </p><input type="text" name="email"><br>
