@@ -41,7 +41,7 @@
      Deploy your pages to one of your servers and ensure that it works correctly there.
 
 /-->
-<?php include "../header.php"; ?>
+<?php include "../header-working.php"; ?>
         <div class="main-content">
             <form action="contact-form.php" method="post">
                  <p>Name: </p><input type="text" name="name"><br>
