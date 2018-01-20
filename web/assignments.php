@@ -20,8 +20,10 @@ Something dynamic (e.g., mouse-overs, menus, on-click, on-change, etc.)
         
         <div class="main-content">
             <h1>CS 313</h1><br>
-            <h3>Week 3</h3>
-            <a href="team-activity.php">Team Activity</a>
+            <div class="week">
+                <h3>Week 3</h3>
+                <a href="Week3/team-activity.php">Team Activity</a>
+            </div>
         </div>
         
         
