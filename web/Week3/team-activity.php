@@ -54,5 +54,6 @@
                  <p>Comments: </p><input type="text-area" name="comments"><br>
                  <input type="submit">
             </form>
+            <div></div>
         </div>
 <?php include "../footer.php"; ?>

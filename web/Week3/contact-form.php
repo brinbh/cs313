@@ -1,9 +1,12 @@
-<?php include "../header.php"; ?>
+<?php include "../header-working.php"; ?>
         <div class="../main-content">
-
-            <h3>Hi, <?php echo $_GET["name"]; ?></h3><br>
+            <div>
+            <h3>Hi, <?php echo $_POST["name"]; ?></h3><br>
             <p><strong>Contact Info:</strong><br>
-                <?php echo $_POST["email"]; ?></p>
+                <a href="mailto:<?php echo $_POST["email"]; ?>"><?php echo $_POST["email"]; ?></a></p>
+            <p>Major: <?php echo $_POST["major"]; ?></p>
+            <p>Comments: <?php echo $_POST["major"]; ?></p>
+            </div>
 
         </div>
 <?php include "../footer.php"; ?>
