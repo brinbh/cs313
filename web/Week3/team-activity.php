@@ -1,26 +1,4 @@
-<!-- Create an HTML form that contains the following components:
-
-     Name (text)
-
-     Email (text)
-
-     Major (radio button) with the following options:
-
-     Computer Science
-
-     Web Design and Development
-
-     Computer information Technology
-
-     Computer Engineering
-
-     Comments (text area)
-
-     You do not need to style this HTML form per se, but each input should be labeled and separated from each other.
-
-     Create a PHP script to handle this form, so that when the form is submitted, it captures the form data and produces a web page that displays:
-
-     The user's name
+<!--
 
      Their email address, with a "mailto:" link for the email address
 
@@ -63,8 +41,18 @@
      Deploy your pages to one of your servers and ensure that it works correctly there.
 
 /-->
-<?php include "header.php"; ?>
-        <div class="main-content">
-            <p>This will be a form.</p>
+<?php include "../header.php"; ?>
+        <div class="../main-content">
+            <form action="contact-form.php" method="post">
+                 <p>Name: </p><input type="text" name="name"><br>
+                 <p>Email: </p><input type="text" name="email"><br>
+                 <p>Major: </p><br>
+                    <input type="radio" name="major" value="computerScience">Computer Science<br>
+                    <input type="radio" name="major" value="webDesignAndDevelopment">Web Design and Development<br>
+                    <input type="radio" name="major" value="computerInformationTechnology">Computer information Technology<br>
+                    <input type="radio" name="major" value="computerEngineering">Computer Engineering<br>
+                 <p>Comments: </p><input type="text-area" name="comments"><br>
+                 <input type="submit">
+            </form>
         </div>
-<?php include "footer.php"; ?>
+<?php include "../footer.php"; ?>
