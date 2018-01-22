@@ -1,35 +1,4 @@
 <!--
-
-     Their email address, with a "mailto:" link for the email address
-
-     Their major
-
-     Their comments
-
-     Again, this data need not be styled, but it should be labeled and separated from each other.
-
-     Use the POST method for your form submission.
-
-     Remember that PHP pages cannot be run by simply double clicking them. They must be run through a server (e.g., localhost). If necessary, please refer back to Running PHP on your Local Server from the Week 02 Preparation material for more information about running PHP files on your local computer.
-
-     Add to your form a checkbox list for the continents the user has visited with the following options:
-
-     North America
-
-     South America
-
-     Europe
-
-     Asia
-
-     Australia
-
-     Africa
-
-     Antarctica
-
-     Then, modify your PHP page to read and display this list.
-
      STRETCH CHALLENGES
 
      After finishing the core requirements, ensure that everyone is at that point and understands the material. When everyone has completed the core requirements, you can move on to these stretch challenges.
@@ -52,6 +21,15 @@
                     <input type="radio" name="major" value="Computer Information Technology">Computer information Technology<br><br>
                     <input type="radio" name="major" value="Computer Engineering">Computer Engineering<br><br>
                  <p>Comments: </p><input type="text-area" name="comments"><br><br>
+                 <p>Have you visited any of the following countries?</p>
+                    <input type="checkbox" name="country" value="North America">North America<br>
+                    <input type="checkbox" name="country" value="South America">South America<br>
+                    <input type="checkbox" name="country" value="Europe">Europe<br>
+                    <input type="checkbox" name="country" value="Asia">Asia<br>
+                    <input type="checkbox" name="country" value="Australia">Australia<br>
+                    <input type="checkbox" name="country" value="Africa">Africa<br>
+                    <input type="checkbox" name="country" value="Antarctica">Antarctica<br>
+
                  <input type="submit">
             </form>
             <div></div>
