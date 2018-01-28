@@ -24,28 +24,12 @@
             foreach($items as $item){
                 echo "<div class='shopping-item'>"
                 ."<div class='image-box'><img src='"
-                ."../img/".$item[1]
-                ."'/></div>"
-                ."<p class='price'>".$item[2]
-                ."</p>"
-                ."<input type='checkbox' name='add' value='".$item[0]."'/>"
+                ."../img/".$item[1]."'/></div>"
+                ."<p class='price'>".$item[2]."</p>"
+                ."<input type='checkbox' name='items[]' value='".$item[0]."'/>"
                 ."</div>";
             }
-
-//            if ($_POST['add']){
-//                $_SESSION['myCart'] = $_POST['add']
-//            }
-//            if(!$_SESSION['cart']) $_SESSION['cart'] = array();
-//
-//            //save post as an array
-//            if (!_SESSION['$key']) $_SESSION['$key'] = 0;
-//            $_SESSION['cart'][$_SESSION['$key']] = $POST['addToCart'];
-//            $_SESSION['$key']++;
-//            echo "Key: ".$_SESSION['$key'];
-//
-//            //test
-//            var_dump($_SESSION['myCart']);
-//            ?>
+            ?>
         </div>
         <input type="submit" value="View Cart"/>
         </form>
