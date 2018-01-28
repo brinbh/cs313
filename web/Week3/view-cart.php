@@ -22,9 +22,9 @@
                 array_push($_SESSION['cart'], $item);
             }
 
-            foreach ($_SESSION['cart'] as $listItem){
-                foreach ($listItem as $key){
-                    echo $listItem[$key];
+            foreach($_SESSION['cart'] as $listItem) {
+                foreach($listItem as $key=>$item) {
+                    echo $key . ": " . $listItem($key) . "<br>";
                 }
             }
 
