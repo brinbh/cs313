@@ -7,7 +7,14 @@
             <p>Major: <?php echo $_POST["major"]; ?></p>
             <p>Comments: <?php echo $_POST["major"]; ?></p>
             <p>Countries Visited: </p>
-            <ul><?php echo $_POST["country"]; var_dump("country"); ?></ul>
+            <ul><?php
+            $country = $_POST["country"];
+            echo "country is being listed: ".$country;
+            var_dump($country);
+                foreach ($country as $listItem){
+                    echo "<li>".$listItem."</li>";
+                    echo "worked";
+                 } ?></ul>
             </div>
 
         </div>

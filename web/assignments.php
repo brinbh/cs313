@@ -22,7 +22,8 @@ Something dynamic (e.g., mouse-overs, menus, on-click, on-change, etc.)
             <h1>CS 313</h1><br>
             <div class="week">
                 <h3>Week 3</h3>
-                <a href="Week3/team-activity.php">Team Activity</a>
+                <a href="Week3/team-activity.php">Team Activity</a><br>
+                <a href="Week3/browse.php">Prove Activity</a>
             </div>
         </div>
         

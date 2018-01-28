@@ -94,3 +94,54 @@ hr{
 .button:hover{
     background-color: #333;
 }
+
+/* SHOPPING */
+.shopping-list{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.shopping-item{
+    flex-grow: 1;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.shopping-item:hover{
+    background-color: #EAEAEA;
+}
+.shopping-item h3{
+    text-align: center;
+}
+.price{
+    color: forestgreen;
+    font-weight: bold;
+    text-align: center;
+}
+.shopping-item form{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.image-box{
+    width: 250px;
+    height: 250px;
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+}
+.image-box img{
+    height:225px;
+}
+.add-to-cart{
+    background-color:forestgreen;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 0px;
+    color: ivory;
+    cursor: pointer;
+}
