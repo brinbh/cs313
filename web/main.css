@@ -96,7 +96,7 @@ hr{
 }
 
 /* SHOPPING */
-.shopping-list{
+.shopping-list form{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
