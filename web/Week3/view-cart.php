@@ -22,12 +22,12 @@
                 array_push($_SESSION['cart'], $item);
             }
 
-            echo "<ul>";
-            foreach($_SESSION as $listItem){
-                echo $listItem;
-
+            foreach ($_SESSION['cart'] as $listItem){
+                foreach ($listItem as $key){
+                    echo $listItem[$key];
+                }
             }
-            echo "</ul>";
+
             var_dump($_SESSION['cart']);
             ?>
             </p>
