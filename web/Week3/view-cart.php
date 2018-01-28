@@ -20,18 +20,16 @@
             $i = 0;
             foreach($_POST as $item){
                 array_push($_SESSION['cart'], $item);
-                echo $_SESSION['cart'][$item][$i];
-
             }
 
-            echo $_SESSION['cart'];
             echo "<ul>";
             foreach($_SESSION as $listItem){
-                echo $listItem[$i];
-                $i++;
+                echo $listItem;
+
             }
             echo "</ul>";
             var_dump($_SESSION['cart']);
-            ?></p>
+            ?>
+            </p>
         </div>
 <?php include "../footer.php"; ?>
