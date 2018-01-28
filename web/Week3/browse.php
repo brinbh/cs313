@@ -1,8 +1,8 @@
-<?php include "../header-working.php"; ?>
-    <?php
+ <?php
     // Start the session
     session_start();
     ?>
+    <?php include "../header-working.php"; ?>
     <div class="../main-content">
         <div>
         <h1>Taco Cat Stickers</h1>
@@ -26,7 +26,7 @@
                 ."<div class='image-box'><img src='"
                 ."../img/".$item[1]."'/></div>"
                 ."<p class='price'>".$item[2]."</p>"
-                ."<input type='checkbox' name='items[]' value='".$item[0]."'/>"
+                ."<input class='checkbox' type='checkbox' name='items[]' value='".$item[0]."'/>"
                 ."</div>";
             }
             ?>
