@@ -26,5 +26,12 @@
 
             ?>
             </p>
+            <form method="post" action="confirmation-page.php">
+            Enter your Name:
+            <input type="text" name="name" value="Name"><br>
+            Enter your Billing Address:
+            <input type="text" name="address" value="Address">
+            <input type="submit" name="submit" value="submit">
+            </form>
         </div>
 <?php include "../footer.php"; ?>
