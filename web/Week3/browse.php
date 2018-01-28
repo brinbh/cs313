@@ -31,20 +31,20 @@
                 ."</form></div>";
             }
 
-            if ($_POST['add']){
-                $_SESSION['myCart'] = $_POST['add']
-            }
-            if(!$_SESSION['cart']) $_SESSION['cart'] = array();
-
-            //save post as an array
-            if (!_SESSION['$key']) $_SESSION['$key'] = 0;
-            $_SESSION['cart'][$_SESSION['$key']] = $POST['addToCart'];
-            $_SESSION['$key']++;
-            echo "Key: ".$_SESSION['$key'];
-
-            //test
-            var_dump($_SESSION['myCart']);
-            ?>
+//            if ($_POST['add']){
+//                $_SESSION['myCart'] = $_POST['add']
+//            }
+//            if(!$_SESSION['cart']) $_SESSION['cart'] = array();
+//
+//            //save post as an array
+//            if (!_SESSION['$key']) $_SESSION['$key'] = 0;
+//            $_SESSION['cart'][$_SESSION['$key']] = $POST['addToCart'];
+//            $_SESSION['$key']++;
+//            echo "Key: ".$_SESSION['$key'];
+//
+//            //test
+//            var_dump($_SESSION['myCart']);
+//            ?>
         </div>
 
 <?php include "../footer.php"; ?>

@@ -14,9 +14,18 @@
 */
 
             <h1>My Shopping Cart</h1>
-            <p>Name of what I bought: </p>
+            <p>This is a list of what you are going to purchase.</p>
             <p><?php
-                echo $_POST['addToCart'];
+                if(empty($_SESSION['myCart']){
+                    //to do if there are no products selected
+                }
+                //to do if there are products
+                echo "<ul";
+                foreach($_POST['items'] as $item){
+                    array_push($my-cart, $item);
+                    echo "<li>[X] ". $item ."</li>";
+                }
+                echo "</ul>"
             ?></p>
         </div>
 <?php include "../footer.php"; ?>
