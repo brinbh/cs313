@@ -1,7 +1,3 @@
-<!--<?php
-    require "db/database.php";
-    $db = get_db();
-?>/-->
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,7 +9,10 @@
         <header>
             <!--Logo /-->
             <!--Navigation? /-->
+            <div class="menu">
             <h1>Hi, my name is Brittany</h1>
+            <a href="add-project.php" class="add-project button">Add Project</a>
+            </div>
         </header>
         <!--Body /-->
         <div class="content">
@@ -57,19 +56,19 @@
                 <!-- Projects /-->
                 <a class="project" href="projects/conference-2016.html">2016 International Conference Website</a>
 
-                <?php
-                $statement = $db->prepare("SELECT * FROM project;");
-                $statement->execute();
-                // Go through each result
-                while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-                {
-                	// The variable "row" now holds the complete record for that
-                	// row, and we can access the different values based on their
-                	// name
-                	echo '<p>';
-                	echo '<p>' . $row['project_title'] . '</p>';
-                }
-                ?>
+//                <?php
+//                $statement = $db->prepare("SELECT * FROM project;");
+//                $statement->execute();
+//                // Go through each result
+//                while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+//                {
+//                	// The variable "row" now holds the complete record for that
+//                	// row, and we can access the different values based on their
+//                	// name
+//                	echo '<p>';
+//                	echo '<p>' . $row['project_title'] . '</p>';
+//                }
+//                ?>
             </div>
         </div>
         <footer>

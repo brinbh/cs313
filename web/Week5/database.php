@@ -40,3 +40,7 @@ foreach ($db->query('SELECT now()') as $row)
 
 </body>
 </html>
+//<!--<?php
+//    require "db/database.php";
+//    $db = get_db();
+//?>/-->
