@@ -28,7 +28,7 @@ Something dynamic (e.g., mouse-overs, menus, on-click, on-change, etc.)
             </div>
             <div class="week">
                 <h3>Week 5</h3>
-                <a href="/cs313/web/Portfolio/">Prove Activity</a><br>
+                <a href="Portfolio/index.php">Prove Activity</a><br>
             </div>
             </div>
         </div>
