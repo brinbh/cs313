@@ -22,12 +22,14 @@ h3 {
     font-weight: 300;
     padding-top: 1.5rem;
 }
-p{
+p {
     padding-top: 1rem;
 }
 a, p a{
     color: #336598;
     border-bottom: 1px solid #336598;
+    padding-top: 1rem;
+
 }
 /*COLOR*/
 body{
@@ -154,4 +156,14 @@ hr{
 input{
     cursor: pointer;
     font-size: 1rem;
+}
+
+.semester {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: left;
+    flex-grow: 3;
+}
+.page-assignments-header {
+    flex-grow: 1;
 }

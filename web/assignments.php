@@ -19,11 +19,17 @@ Something dynamic (e.g., mouse-overs, menus, on-click, on-change, etc.)
         <hr>
         
         <div class="main-content">
-            <h1>CS 313</h1><br>
+            <h1 class="page-assignments-header">CS 313</h1><br>
+            <div class="semester">
             <div class="week">
                 <h3>Week 3</h3>
                 <a href="Week3/team-activity.php">Team Activity</a><br>
                 <a href="Week3/browse.php">Prove Activity</a>
+            </div>
+            <div class="week">
+                <h3>Week 5</h3>
+                <a href="/cs313/web/Portfolio/">Prove Activity</a><br>
+            </div>
             </div>
         </div>
         
