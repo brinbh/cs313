@@ -1,7 +1,7 @@
-<?php
-    require "db/database.php";
-    $db = get_db();
-?>
+//<?php
+//    require "db/database.php";
+//    $db = get_db();
+//?>
 <!DOCTYPE html>
 <html>
     <head>

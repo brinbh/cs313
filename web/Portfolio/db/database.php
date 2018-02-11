@@ -21,7 +21,9 @@ $dbUser = $dbopts["user"];
 $dbPassword = $dbopts["pass"];
 $dbName = ltrim($dbopts["path"],'/');
 
-print "<p>pgsql:host=$dbHost;port=$dbPort;dbname=$dbName</p>\n\n";
+print "<p>pgsql: <br>host=$dbHost;<br>port=$dbPort;<br>dbname=$dbName</p>\n\n";
+
+//    $myPDO = new PDO('pgsql:host=localhost; dbname=DBNAME', 'USERNAME', 'PASSWORD');
 
 try {
  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
@@ -33,8 +35,12 @@ catch (PDOException $ex) {
 
 foreach ($db->query('SELECT now()') as $row)
 {
- print "<p>$row[0]</p>\n\n";
+ print "<p>Row: $row[0]</p>\n\n";
 }
+
+$project = $db->query('SELECT * FROM project');
+print "Project: $project";
+
 
 ?>
 
