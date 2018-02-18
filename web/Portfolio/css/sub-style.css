@@ -23,3 +23,14 @@
         
     }
 }
+
+/*TYPOGRPAHY*/
+p {
+    line-height: 2rem;
+}
+
+.project-img-manage {
+    /*max-width: 300px;*/
+    max-height: 200px;
+    align: center;
+}

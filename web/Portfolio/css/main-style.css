@@ -77,4 +77,45 @@ img{
 .button:hover{
     background-color: #333;
 }
+.project-img {
+    max-width: 300px;
+    /*max-height: 240px;*/
+    align: center;
+    opacity: .7;
+}
+.project-img:hover {
+    opacity: 1;
+}
+.img-container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin: 8px;
+    border-radius: 5px;
+}
+.projects-container {
+    display: flex;
+    flex-flow: row wrap;
+}
 
+/*FORM*/
+input[type=text] {
+    width: 100%;
+    min-height: 50px;
+    border: none;
+}
+
+.projects {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+.project-img-manage {
+    /*max-width: 300px;*/
+    max-height: 200px;
+    align: center;
+}

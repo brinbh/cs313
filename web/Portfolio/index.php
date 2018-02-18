@@ -1,3 +1,9 @@
+<?php
+    require "db/project_model.php";
+//    require "db/image_model.php";
+    $projects = getAllProjects();
+//    $images = getAllImages();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -11,7 +17,7 @@
             <!--Navigation? /-->
             <div class="menu">
             <h1>Hi, my name is Brittany</h1>
-            <a href="add-project.php" class="add-project button">Add Project</a>
+            <a href="manage-project.php" class="manage-project button">Manage Projects</a>
             </div>
         </header>
         <!--Body /-->
@@ -52,23 +58,17 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row projects-container">
                 <!-- Projects /-->
-                <a class="project" href="projects/conference-2016.html">2016 International Conference Website</a>
 
-//                <?php
-//                $statement = $db->prepare("SELECT * FROM project;");
-//                $statement->execute();
-//                // Go through each result
-//                while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-//                {
-//                	// The variable "row" now holds the complete record for that
-//                	// row, and we can access the different values based on their
-//                	// name
-//                	echo '<p>';
-//                	echo '<p>' . $row['project_title'] . '</p>';
-//                }
-//                ?>
+                <?php
+                foreach ($projects as $project) {
+                echo "<div class='img-container'>";
+                echo "<a href='".$project['project_html']."' >";
+                echo "<img class='project-img' src='".$project['project_img']."'></a>";
+                echo "</div>";
+                }?>
+
             </div>
         </div>
         <footer>

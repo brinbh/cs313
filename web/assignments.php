@@ -30,6 +30,11 @@ Something dynamic (e.g., mouse-overs, menus, on-click, on-change, etc.)
                 <h3>Week 5</h3>
                 <a href="Portfolio/index.php">Prove Activity</a><br>
             </div>
+            <div class="week">
+                <h3>Week 6</h3>
+                <a href="Week6/week6.php">Team Activity</a><br>
+                <a href="Portfolio/index.php">Prove Activity</a><br>
+            </div>
             </div>
         </div>
         

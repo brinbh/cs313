@@ -3,45 +3,33 @@
 
 <?php
 
-// default Heroku Postgres configuration URL
-$dbUrl = getenv('');
+function get_db() {
+    // default Heroku Postgres configuration URL
+    $dbUrl = getenv('');
 
-if (empty($dbUrl)) {
- // example localhost configuration URL with postgres username and a database called cs313db
- $dbUrl = "postgres://postgres:postgres@localhost:5432/postgres";
+    if (empty($dbUrl)) {
+     $dbUrl = "postgres://postgres:postgres@localhost:5432/postgres";
+    }
+
+    $dbopts = parse_url($dbUrl);
+
+    $dbHost = $dbopts["host"];
+    $dbPort = $dbopts["port"];
+    $dbUser = $dbopts["user"];
+    $dbPassword = $dbopts["pass"];
+    $dbName = ltrim($dbopts["path"],'/');
+
+    try {
+     $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+    }
+    catch (PDOException $ex) {
+     print "<p>error: $ex->getMessage() </p>\n\n";
+     die();
+    }
+
+    return $db;
+
 }
-
-$dbopts = parse_url($dbUrl);
-
-print "<p>$dbUrl</p>\n\n";
-
-$dbHost = $dbopts["host"];
-$dbPort = $dbopts["port"];
-$dbUser = $dbopts["user"];
-$dbPassword = $dbopts["pass"];
-$dbName = ltrim($dbopts["path"],'/');
-
-print "<p>pgsql: <br>host=$dbHost;<br>port=$dbPort;<br>dbname=$dbName</p>\n\n";
-
-//    $myPDO = new PDO('pgsql:host=localhost; dbname=DBNAME', 'USERNAME', 'PASSWORD');
-
-try {
- $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-}
-catch (PDOException $ex) {
- print "<p>error: $ex->getMessage() </p>\n\n";
- die();
-}
-
-foreach ($db->query('SELECT now()') as $row)
-{
- print "<p>Row: $row[0]</p>\n\n";
-}
-
-$project = $db->query('SELECT * FROM project');
-print "Project: $project";
-
-
 ?>
 
 </body>
