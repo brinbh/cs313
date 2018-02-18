@@ -18,6 +18,7 @@
             <div class="menu">
             <h1>Hi, my name is Brittany</h1>
             <a href="manage-project.php" class="manage-project button">Manage Projects</a>
+            <a href="login.php" class="button">Login</a>
             </div>
         </header>
         <!--Body /-->
